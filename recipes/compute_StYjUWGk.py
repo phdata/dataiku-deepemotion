@@ -30,7 +30,10 @@ def extract_frame(video_path, video_folder, frame_pct):
         frame_count = vid_obj.get(cv2.CAP_PROP_FRAME_COUNT)
         fp = frame_pct
 
-        frame_number = np.max([int(np.round(frame_count * (fp / 100.0))) - 2, 0])
+        frame_number = np.max([
+                int(np.round(frame_count * (fp / 100.0))) - 2,
+                0
+            ])
 
         vid_obj.set(cv2.CAP_PROP_POS_FRAMES, frame_number)
 
