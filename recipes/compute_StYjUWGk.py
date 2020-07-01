@@ -50,7 +50,7 @@ def extract_frame(video_path, video_folder, frame_pct):
     finally:
         os.remove(vfname)
 
-    return image, buffer
+    return image, buffer.tobytes()
 
 # Decode emotion
 def get_emotion(fname):
@@ -124,7 +124,7 @@ for index, row in df.iterrows():
     _, frame_data = extract_frame(row.video_path, emotion_videos, 
                                row.frame)
 
-    emotion_images.upload_data(row.image_path, frame_data.tobytes())
+    emotion_images.upload_data(row.image_path, frame_data)
 
 # Write output CSV
 emotion_images_csv = dataiku.Dataset("EmotionImagesCSV")
