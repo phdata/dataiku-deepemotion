@@ -3,7 +3,70 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "random_seed": 1337,
+      "train_ratio": 0.8,
+      "gpu_allocation": 0.5,
+      "list_gpu": "0",
+      "layer_to_retrain": "last",
+      "layer_to_retrain_n": 2,
+      "model_dropout": 0.2,
+      "model_reg": {
+        "l1": 0,
+        "l2": 0
+      },
+      "model_optimizer": "sgd",
+      "model_learning_rate": 0.001,
+      "batch_size": 32,
+      "nb_epochs": 400,
+      "nb_steps_per_epoch": 100,
+      "nb_validation_steps": 50,
+      "model_custom_params_opti": [
+        {
+          "name": "momentum",
+          "value": "0.9"
+        },
+        {
+          "name": "nesterov",
+          "value": "True"
+        }
+      ],
+      "n_augmentation": 3,
+      "model_custom_params_data_augmentation": [
+        {
+          "name": "width_shift_range",
+          "value": "0.1"
+        },
+        {
+          "name": "height_shift_range",
+          "value": "0.1"
+        },
+        {
+          "name": "zoom_range",
+          "value": "0.1"
+        },
+        {
+          "name": "horizontal_flip",
+          "value": "True"
+        },
+        {
+          "name": "fill_mode",
+          "value": "constant"
+        },
+        {
+          "name": "cval",
+          "value": "255"
+        }
+      ],
+      "data_augmentation": true,
+      "tensorboard": false,
+      "model_pooling": "avg",
+      "image_width": 197,
+      "image_height": 197,
+      "col_filename": "image_path",
+      "col_label": "emotion",
+      "should_use_gpu": true
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -50,11 +113,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593633189881
+    "lastModifiedOn": 1593633291982
   },
   "creationTag": {
     "versionNumber": 0,
