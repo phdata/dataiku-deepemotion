@@ -77,11 +77,11 @@ def get_intensity(fname):
     return 'normal' if code == '01' else 'strong'
 
 
-# Read recipe inputs
+# Read recipe inputs -- CHANGE THIS IDENTIFIER TO MATCH YOUR INPUT FOLDER
 emotion_videos = dataiku.Folder("JV4cw0cu")
 emotion_videos_info = emotion_videos.get_info()
 
-# Write recipe output files
+# Write recipe output files -- CHANGE THIS IDENTIFIER TO MATCH YOUR OUTPUT FOLDER
 emotion_images = dataiku.Folder("StYjUWGk")
 emotion_images_info = emotion_images.get_info()
 
