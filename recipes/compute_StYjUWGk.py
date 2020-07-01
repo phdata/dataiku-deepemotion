@@ -124,7 +124,7 @@ for index, row in df.iterrows():
     _, frame_data = extract_frame(row.video_path, emotion_videos, 
                                row.frame)
 
-    emotion_images.upload_data(row.image_path, frame_data)
+    emotion_images.upload_data(row.image_path, frame_data.tobytes())
 
 # Write output CSV
 emotion_images_csv = dataiku.Dataset("EmotionImagesCSV")
