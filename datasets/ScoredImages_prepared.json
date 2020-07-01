@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593635406572
+    "lastModifiedOn": 1593635523779
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,18 +91,56 @@
         "type": "string"
       },
       {
-        "name": "prediction",
-        "type": "map",
-        "mapKeys": {
-          "type": "string"
-        },
-        "mapValues": {
-          "type": "string"
-        }
+        "name": "prediction_sad",
+        "type": "double"
       },
       {
-        "name": "error",
+        "name": "prediction_angry",
+        "type": "double"
+      },
+      {
+        "name": "prediction_fearful",
+        "type": "double"
+      },
+      {
+        "name": "prediction_surprised",
+        "type": "double"
+      },
+      {
+        "name": "prediction_neutral",
+        "type": "double"
+      },
+      {
+        "name": "prediction_calm",
+        "type": "double"
+      },
+      {
+        "name": "prediction_disgust",
+        "type": "double"
+      },
+      {
+        "name": "prediction_happy",
+        "type": "double"
+      },
+      {
+        "name": "correct",
         "type": "bigint"
+      },
+      {
+        "name": "max_prediction",
+        "type": "double"
+      },
+      {
+        "name": "max_label",
+        "type": "string"
+      },
+      {
+        "name": "video_path",
+        "type": "string"
+      },
+      {
+        "name": "label",
+        "type": "string"
       }
     ],
     "userModified": true
