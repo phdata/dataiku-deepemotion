@@ -3,32 +3,35 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 1,
   "seed": 1337,
-  "randomColumns": [],
+  "randomColumns": [
+    "video_path"
+  ],
   "centileOrders": [],
   "rangeSetTime": false,
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 80
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "RANDOM_COLUMNS",
   "centileTDigest": false,
   "valueSplits": [
     {
@@ -89,6 +92,44 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "video_path",
+                "type": "string"
+              },
+              {
+                "name": "emotion",
+                "type": "string"
+              },
+              {
+                "name": "intensity",
+                "type": "string"
+              },
+              {
+                "name": "statement",
+                "type": "string"
+              },
+              {
+                "name": "repetition",
+                "type": "string"
+              },
+              {
+                "name": "actor",
+                "type": "string"
+              },
+              {
+                "name": "frame",
+                "type": "bigint"
+              },
+              {
+                "name": "image_path",
+                "type": "string"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
