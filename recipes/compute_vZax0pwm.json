@@ -18,7 +18,7 @@
       "model_optimizer": "sgd",
       "model_learning_rate": 0.001,
       "batch_size": 32,
-      "nb_epochs": 10,
+      "nb_epochs": 400,
       "nb_steps_per_epoch": 100,
       "nb_validation_steps": 50,
       "model_custom_params_opti": [
@@ -113,11 +113,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593633875914
+    "lastModifiedOn": 1593635896377
   },
   "creationTag": {
     "versionNumber": 0,
