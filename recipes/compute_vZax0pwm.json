@@ -1,0 +1,71 @@
+{
+  "type": "CustomCode_deeplearning-image-retrain",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "label_dataset": {
+      "items": [
+        {
+          "ref": "TrainingImages",
+          "deps": []
+        }
+      ]
+    },
+    "image_folder": {
+      "items": [
+        {
+          "ref": "StYjUWGk",
+          "deps": []
+        }
+      ]
+    },
+    "model_folder": {
+      "items": [
+        {
+          "ref": "xeeoyTrY",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "model_output": {
+      "items": [
+        {
+          "ref": "vZax0pwm",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1593633189881
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1593633189881
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
