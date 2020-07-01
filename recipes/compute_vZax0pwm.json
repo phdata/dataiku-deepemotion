@@ -8,7 +8,7 @@
       "train_ratio": 0.8,
       "gpu_allocation": 0.5,
       "list_gpu": "0",
-      "layer_to_retrain": "last",
+      "layer_to_retrain": "all",
       "layer_to_retrain_n": 2,
       "model_dropout": 0.2,
       "model_reg": {
@@ -113,11 +113,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593633331173
+    "lastModifiedOn": 1593633342975
   },
   "creationTag": {
     "versionNumber": 0,
