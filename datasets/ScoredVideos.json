@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593635685193
+    "lastModifiedOn": 1593635716488
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,56 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "video_path",
+        "type": "string"
+      },
+      {
+        "name": "prediction_sad_avg",
+        "type": "double"
+      },
+      {
+        "name": "prediction_angry_avg",
+        "type": "double"
+      },
+      {
+        "name": "prediction_fearful_avg",
+        "type": "double"
+      },
+      {
+        "name": "prediction_surprised_avg",
+        "type": "double"
+      },
+      {
+        "name": "prediction_neutral_avg",
+        "type": "double"
+      },
+      {
+        "name": "prediction_calm_avg",
+        "type": "double"
+      },
+      {
+        "name": "prediction_disgust_avg",
+        "type": "double"
+      },
+      {
+        "name": "prediction_happy_avg",
+        "type": "double"
+      },
+      {
+        "name": "correct_avg",
+        "type": "double"
+      },
+      {
+        "name": "max_label_concat",
+        "type": "string"
+      },
+      {
+        "name": "label_first",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
