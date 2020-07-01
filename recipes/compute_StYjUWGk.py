@@ -81,7 +81,7 @@ def get_intensity(fname):
 emotion_videos = dataiku.Folder("JV4cw0cu")
 emotion_videos_info = emotion_videos.get_info()
 
-# Write recipe outputs
+# Write recipe output files
 emotion_images = dataiku.Folder("StYjUWGk")
 emotion_images_info = emotion_images.get_info()
 
@@ -123,3 +123,6 @@ for index, row in df.iterrows():
 
     emotion_images.upload_data(row.image_path, frame_data)
 
+# Write output CSV
+emotion_images_csv = dataiku.Dataset("EmotionImagesCSV")
+emotion_images_csv.write_with_schema(df)

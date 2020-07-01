@@ -32,16 +32,20 @@
         {
           "ref": "StYjUWGk",
           "appendMode": false
+        },
+        {
+          "ref": "EmotionImagesCSV",
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593621366957
+    "lastModifiedOn": 1593621526028
   },
   "creationTag": {
     "versionNumber": 0,
