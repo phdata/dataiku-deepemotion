@@ -107,7 +107,7 @@ new_df = []
 for index, item in df.iterrows():
     for f in frames:
         item['frame'] = f
-        item['image_path'] = item.video_path.replace('.mp4', '_{}_f{}.png'.format(item.emotion, f))
+        item['image_path'] = item.video_path[1:].replace('.mp4', '_{}_f{}.png'.format(item.emotion, f))
 
         new_df.append(item.copy())
 
