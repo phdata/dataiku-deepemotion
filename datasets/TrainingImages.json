@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593632868072
+    "lastModifiedOn": 1593632898792
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,40 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "video_path",
+        "type": "string"
+      },
+      {
+        "name": "emotion",
+        "type": "string"
+      },
+      {
+        "name": "intensity",
+        "type": "string"
+      },
+      {
+        "name": "statement",
+        "type": "string"
+      },
+      {
+        "name": "repetition",
+        "type": "string"
+      },
+      {
+        "name": "actor",
+        "type": "string"
+      },
+      {
+        "name": "frame",
+        "type": "bigint"
+      },
+      {
+        "name": "image_path",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
