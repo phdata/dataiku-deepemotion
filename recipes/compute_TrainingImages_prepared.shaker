@@ -25,8 +25,35 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "/",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "image_path"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +61,16 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "intensity": 113,
+    "actor": 100,
+    "emotion": 100,
+    "video_path": 190,
+    "image_path": 295,
+    "statement": 100,
+    "repetition": 100,
+    "frame": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
