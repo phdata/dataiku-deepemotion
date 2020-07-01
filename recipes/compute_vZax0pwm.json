@@ -80,7 +80,7 @@
     "label_dataset": {
       "items": [
         {
-          "ref": "TrainingImages",
+          "ref": "TrainingImages_prepared",
           "deps": []
         }
       ]
@@ -113,11 +113,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593633344381
+    "lastModifiedOn": 1593633597463
   },
   "creationTag": {
     "versionNumber": 0,
