@@ -25,8 +25,32 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "PythonUDF",
+      "params": {
+        "mode": "ROW",
+        "envSelection": {
+          "envMode": "INHERIT"
+        },
+        "stopOnError": true,
+        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    row[\"rowLength\"] \u003d len(row)\n    row[\"static_value\"] \u003d 42\n    return row\n",
+        "useKernel": false,
+        "sourceColumnsList": [],
+        "usePythonUnicode": true,
+        "vectorSize": 256,
+        "vectorize": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +58,22 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "prediction_sad_avg": 176,
+    "correct_avg": 155,
+    "label_first": 100,
+    "max_label_concat": 300,
+    "prediction_calm_avg": 183,
+    "video_path": 190,
+    "prediction_fearful_avg": 204,
+    "prediction_neutral_avg": 204,
+    "prediction_surprised_avg": 218,
+    "static_value": 105,
+    "rowLength": 100,
+    "prediction_happy_avg": 190,
+    "prediction_angry_avg": 190,
+    "prediction_disgust_avg": 204
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
