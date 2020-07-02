@@ -115,6 +115,7 @@
   },
   "name": "phData - Emotion Detection with Deep Learning",
   "projectStatus": "Sandbox",
+  "imgPattern": 2,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -170,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593709108785
+    "lastModifiedOn": 1593714401982
   },
   "creationTag": {
     "versionNumber": 0,
@@ -187,41 +188,6 @@
   "tags": [],
   "customFields": {},
   "checklists": {
-    "checklists": [
-      {
-        "title": "Your new project\u0027s Todo",
-        "createdOn": 0,
-        "items": [
-          {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1593619748700,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1593619748700,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Import your [first dataset](projects/PHDATAEMOTION/datasets/new/)",
-            "createdOn": 1593619748700,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1593619748700,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          }
-        ]
-      }
-    ]
+    "checklists": []
   }
 }
