@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593703227676
+    "lastModifiedOn": 1593703306199
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,14 +88,6 @@
     "columns": [
       {
         "name": "video_path",
-        "type": "string"
-      },
-      {
-        "name": "max_label_concat",
-        "type": "string"
-      },
-      {
-        "name": "label_first",
         "type": "string"
       },
       {
