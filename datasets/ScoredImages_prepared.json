@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593635523779
+    "lastModifiedOn": 1593702929156
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,19 +91,7 @@
         "type": "string"
       },
       {
-        "name": "prediction_sad",
-        "type": "double"
-      },
-      {
-        "name": "prediction_angry",
-        "type": "double"
-      },
-      {
-        "name": "prediction_fearful",
-        "type": "double"
-      },
-      {
-        "name": "prediction_surprised",
+        "name": "prediction_calm",
         "type": "double"
       },
       {
@@ -111,11 +99,23 @@
         "type": "double"
       },
       {
-        "name": "prediction_calm",
+        "name": "prediction_angry",
         "type": "double"
       },
       {
         "name": "prediction_disgust",
+        "type": "double"
+      },
+      {
+        "name": "prediction_surprised",
+        "type": "double"
+      },
+      {
+        "name": "prediction_sad",
+        "type": "double"
+      },
+      {
+        "name": "prediction_fearful",
         "type": "double"
       },
       {
