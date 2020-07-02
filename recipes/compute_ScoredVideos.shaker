@@ -41,7 +41,7 @@
           "envMode": "INHERIT"
         },
         "stopOnError": true,
-        "pythonSourceCode": "from collections import Counter \n   \ndef most_frequent(List): \n    occurence_count \u003d Counter(List) \n    return occurence_count.most_common(1)[0][0] \n\ndef process(row):\n    row[\u0027label\u0027] \u003d row.pop(\u0027label_first\u0027)\n    \n    row[\u0027most_freq_label\u0027] \u003d most_frequent(row.pop(\u0027max_label_concat\u0027).split(\u0027,\u0027))\n    row[\u0027most_freq_correct\u0027] \u003d 1 if row[\u0027label\u0027] \u003d\u003d row[\u0027most_freq_label\u0027] else 0\n    \n    return row",
+        "pythonSourceCode": "from collections import Counter \n   \ndef most_frequent(List): \n    occurence_count \u003d Counter(List) \n    return occurence_count.most_common(1)[0][0] \n\ndef process(row):\n    row[\u0027label\u0027] \u003d row[\u0027label_first\u0027]\n    \n    row[\u0027most_freq_label\u0027] \u003d most_frequent(row[\u0027max_label_concat\u0027].split(\u0027,\u0027))\n    row[\u0027most_freq_correct\u0027] \u003d 1 if row[\u0027label\u0027] \u003d\u003d row[\u0027most_freq_label\u0027] else 0\n    \n    return row",
         "useKernel": false,
         "sourceColumnsList": [],
         "usePythonUnicode": true,
