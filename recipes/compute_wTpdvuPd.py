@@ -36,4 +36,4 @@ for index, row in df.iterrows():
     _, frame_data = extract_frame(row.video_path, videos_to_Score, 
                                row.frame)
     
-    images_to_Score.upload_data(row.image_path, frame_data.tobytes())
+    images_to_Score.upload_data(row.image_path, frame_data)
