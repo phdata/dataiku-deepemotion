@@ -1,5 +1,18 @@
 {
-  "endpoints": [],
+  "name": "phdata_score_video",
+  "endpoints": [
+    {
+      "modelType": "CLASSIFICATION",
+      "envSelection": {
+        "envMode": "INHERIT"
+      },
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "prod_score_video",
+      "type": "CUSTOM_PREDICTION"
+    }
+  ],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
