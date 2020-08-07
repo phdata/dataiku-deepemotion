@@ -5,7 +5,18 @@
   },
   "keys": [
     {
-      "column": "video_path"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "video_path",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,8 +26,10 @@
       "firstLastNotNull": false,
       "column": "images",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -31,13 +44,16 @@
       "firstLastNotNull": false,
       "column": "prediction_neutral",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -47,13 +63,16 @@
       "firstLastNotNull": false,
       "column": "prediction_angry",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -63,13 +82,16 @@
       "firstLastNotNull": false,
       "column": "prediction_surprised",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -79,13 +101,16 @@
       "firstLastNotNull": false,
       "column": "prediction_calm",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -95,13 +120,16 @@
       "firstLastNotNull": false,
       "column": "prediction_sad",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -111,13 +139,16 @@
       "firstLastNotNull": false,
       "column": "prediction_disgust",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -127,13 +158,16 @@
       "firstLastNotNull": false,
       "column": "prediction_fearful",
       "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -143,18 +177,21 @@
       "firstLastNotNull": false,
       "column": "prediction_happy",
       "count": false,
+      "$idx": 8,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -190,8 +227,52 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "video_path",
+            "type": "string"
+          },
+          {
+            "name": "prediction_neutral_avg",
+            "type": "double"
+          },
+          {
+            "name": "prediction_angry_avg",
+            "type": "double"
+          },
+          {
+            "name": "prediction_surprised_avg",
+            "type": "double"
+          },
+          {
+            "name": "prediction_calm_avg",
+            "type": "double"
+          },
+          {
+            "name": "prediction_sad_avg",
+            "type": "double"
+          },
+          {
+            "name": "prediction_disgust_avg",
+            "type": "double"
+          },
+          {
+            "name": "prediction_fearful_avg",
+            "type": "double"
+          },
+          {
+            "name": "prediction_happy_avg",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
