@@ -25,8 +25,65 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 10,
+        "inCol": "prediction",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "error",
+          "prediction"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "video_path",
+        "mapping": [
+          {
+            "from": "_f[0-9]{3}.png",
+            "to": ".mp4"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "images"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +91,20 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "prediction_neutral": 176,
+    "images": 218,
+    "prediction_angry": 162,
+    "prediction_calm": 162,
+    "prediction_disgust": 176,
+    "video_path": 218,
+    "prediction_fearful": 176,
+    "prediction": 300,
+    "prediction_surprised": 190,
+    "prediction_sad": 162,
+    "error": 100,
+    "prediction_happy": 162
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
