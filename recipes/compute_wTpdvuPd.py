@@ -3,6 +3,8 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
+from custom_video_processing import extract_frame
+
 # Read recipe inputs
 videos_to_Score = dataiku.Folder("MzP4vBYB")
 videos_to_Score_info = videos_to_Score.get_info()
