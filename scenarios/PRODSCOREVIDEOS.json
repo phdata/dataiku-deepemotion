@@ -5,11 +5,11 @@
   "name": "Score incoming videos",
   "active": false,
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597870329926
+    "lastModifiedOn": 1597870341626
   },
   "checklists": {
     "checklists": []
