@@ -314,7 +314,6 @@
         "gridLonDeg": 0.5,
         "gridLatDeg": 0.5
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA9UlEQVRoQ+2YMQ6CQBBFmVhzBmqPYU9NbUm8gHaGkgsQz0Bt7yW4gGewNthSKDv8DWTG/bTsZv//b3YII1lijyTmN4MMj7fu4TEoqU8HGtaQI2FNSgbW4CXd9zsD+hdLkKp6Q3d48UmGNtCwBkZxvpv9LOX7y08Lw3HAPks0rCmLjdaQ8CRouKQ3grXKMezSmlgtN605/c+2/L8uTcOTBEhYc3+9r2GX9k4wpB8izIlHKFYj7/GJB6eWRhAGZMCEfdj7rhJqWskZHq+52RHPHAxpXtjPAw07qXESdgIqSia7dFR8DjaTsANIURJJOCo+B5uTI/wBk2xYKalR11wAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true,
       "legendPlacement": "OUTER_RIGHT"
@@ -326,11 +325,11 @@
   "name": "Avg. of prediction_happy_avg by video_path on ProdScoredVideos",
   "dashboardCreationId": "DLQrB2c",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597869130699
+    "lastModifiedOn": 1597869171778
   },
   "creationTag": {
     "versionNumber": 0,
