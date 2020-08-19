@@ -11,7 +11,12 @@
     "exportInsightsData": false,
     "includedDatasetsData": [],
     "includedSavedModels": [],
-    "includedManagedFolders": [],
+    "includedManagedFolders": [
+      {
+        "id": "vZax0pwm",
+        "name": "Trained Resnet"
+      }
+    ],
     "exportGitRepository": false
   },
   "instanceFeatures": {
@@ -21,7 +26,11 @@
     "showVersionControlFeatures": false
   },
   "useAppHomepage": true,
-  "homepageSections": [],
+  "homepageSections": [
+    {
+      "tiles": []
+    }
+  ],
   "label": "phData - Emotion Detection with Deep Learning",
   "shortDesc": "The template *phData - Emotion Detection with Deep Learning* was created by Robert Coop on Aug 19th 2020",
   "tags": [],
