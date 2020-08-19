@@ -9,8 +9,8 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 10,
-              "height": 6
+              "width": 12,
+              "height": 7
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -37,11 +37,11 @@
   "name": "App Dash",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597869199397
+    "lastModifiedOn": 1597869205894
   },
   "creationTag": {
     "versionNumber": 0,
