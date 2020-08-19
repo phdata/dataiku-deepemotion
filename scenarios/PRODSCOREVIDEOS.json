@@ -5,11 +5,11 @@
   "name": "Score incoming videos",
   "active": false,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597870137423
+    "lastModifiedOn": 1597870320233
   },
   "checklists": {
     "checklists": []
@@ -61,7 +61,85 @@
       {
         "id": "build_0_true_d_ProdScoredVideos",
         "type": "build_flowitem",
-        "name": "Score incoming videos",
+        "name": "Generate images",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "wTpdvuPd",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_1_true_d_ProdScoredImages",
+        "type": "build_flowitem",
+        "name": "Score images",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "ProdScoredImages",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_1_true_d_ProdScoredImages_prepared",
+        "type": "build_flowitem",
+        "name": "Prepare image data",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "ProdScoredImages_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_1_true_d_ProdScoredVideos",
+        "type": "build_flowitem",
+        "name": "Prepare video-level data",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -77,25 +155,34 @@
               "type": "DATASET",
               "itemId": "ProdScoredVideos",
               "partitionsSpec": ""
-            },
-            {
-              "type": "DATASET",
-              "itemId": "ProdScoredImages_prepared",
-              "partitionsSpec": ""
-            },
-            {
-              "type": "DATASET",
-              "itemId": "ProdScoredImages",
-              "partitionsSpec": ""
-            },
-            {
-              "type": "MANAGED_FOLDER",
-              "itemId": "wTpdvuPd",
-              "partitionsSpec": ""
             }
           ],
           "jobType": "NON_RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "refresh_chart_cache_DLQrB2c",
+        "type": "refresh_chart_cache",
+        "name": "Step #7",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "force": false,
+          "dashboards": [
+            {
+              "smartName": "DLQrB2c",
+              "name": "App Dash"
+            }
+          ],
           "proceedOnFailure": false
         }
       },
