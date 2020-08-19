@@ -285,7 +285,7 @@
         "smoothing": true,
         "showLegend": true,
         "showXAxis": false,
-        "showInChartValues": false,
+        "showInChartValues": true,
         "showInChartLabels": true,
         "strokeWidth": 1,
         "fillOpacity": 0.6,
