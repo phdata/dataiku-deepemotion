@@ -28,7 +28,20 @@
   "useAppHomepage": true,
   "homepageSections": [
     {
-      "tiles": []
+      "sectionTitle": "Interface",
+      "tiles": [
+        {
+          "folderId": "MzP4vBYB",
+          "behavior": "GO_TO_FOLDER",
+          "type": "MANAGED_FOLDER_ADD_FILE",
+          "prompt": "Upload video to score (MP4)"
+        },
+        {
+          "scenarioId": "PRODSCOREVIDEOS",
+          "type": "SCENARIO_RUN",
+          "prompt": "Go"
+        }
+      ]
     }
   ],
   "label": "phData - Emotion Detection with Deep Learning",
