@@ -5,11 +5,11 @@
   "name": "Score incoming videos",
   "active": false,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1596814797933
+    "lastModifiedOn": 1597869670878
   },
   "checklists": {
     "checklists": []
@@ -77,9 +77,29 @@
               "type": "DATASET",
               "itemId": "ProdScoredVideos",
               "partitionsSpec": ""
+            },
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "wTpdvuPd",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "ProdScoredImages",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "ProdScoredImages_prepared",
+              "partitionsSpec": ""
+            },
+            {
+              "type": "DATASET",
+              "itemId": "ProdScoredVideos",
+              "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
