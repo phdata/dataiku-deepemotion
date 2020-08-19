@@ -1,0 +1,29 @@
+{
+  "projectExportManifest": {
+    "exportUploads": false,
+    "exportAllInputDatasets": false,
+    "exportAllDatasets": false,
+    "exportManagedFS": false,
+    "exportAnalysisModels": false,
+    "exportSavedModels": false,
+    "exportManagedFolders": false,
+    "exportAllInputManagedFolders": false,
+    "exportInsightsData": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedManagedFolders": [],
+    "exportGitRepository": false
+  },
+  "instanceFeatures": {
+    "showFlowNavLink": false,
+    "showLabNavLink": false,
+    "showCodeNavLink": false,
+    "showVersionControlFeatures": false
+  },
+  "useAppHomepage": true,
+  "homepageSections": [],
+  "label": "phData - Emotion Detection with Deep Learning",
+  "shortDesc": "The template *phData - Emotion Detection with Deep Learning* was created by Robert Coop on Aug 19th 2020",
+  "tags": [],
+  "instantiationPermission": "USE_APP_MASTER_PERMISSIONS"
+}
