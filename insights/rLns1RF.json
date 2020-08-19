@@ -1,0 +1,345 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "ProdScoredVideos",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "stacked_bars",
+      "variant": "stacked_100",
+      "name": "Avg. of prediction_happy_avg by video_path",
+      "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "video_path",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of prediction_happy_avg, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of prediction_happy_avg, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of prediction_fearful_avg, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of prediction_fearful_avg, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Average of prediction_disgust_avg, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Average of prediction_disgust_avg, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of prediction_sad_avg, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of prediction_sad_avg, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Average of prediction_calm_avg, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Average of prediction_calm_avg, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Average of prediction_neutral_avg, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Average of prediction_neutral_avg, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Average of prediction_surprised_avg, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Average of prediction_surprised_avg, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 7,
+              "label": "Average of prediction_angry_avg, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 7,
+              "label": "Average of prediction_angry_avg, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "prediction_happy_avg",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_fearful_avg",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_disgust_avg",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_sad_avg",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_calm_avg",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_neutral_avg",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_surprised_avg",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_angry_avg",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": true,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA9UlEQVRoQ+2YMQ6CQBBFmVhzBmqPYU9NbUm8gHaGkgsQz0Bt7yW4gGewNthSKDv8DWTG/bTsZv//b3YII1lijyTmN4MMj7fu4TEoqU8HGtaQI2FNSgbW4CXd9zsD+hdLkKp6Q3d48UmGNtCwBkZxvpv9LOX7y08Lw3HAPks0rCmLjdaQ8CRouKQ3grXKMezSmlgtN605/c+2/L8uTcOTBEhYc3+9r2GX9k4wpB8izIlHKFYj7/GJB6eWRhAGZMCEfdj7rhJqWskZHq+52RHPHAxpXtjPAw07qXESdgIqSia7dFR8DjaTsANIURJJOCo+B5uTI/wBk2xYKalR11wAAAAASUVORK5CYII\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Avg. of prediction_happy_avg by video_path on ProdScoredVideos",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1597869052121
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1597869052121
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
