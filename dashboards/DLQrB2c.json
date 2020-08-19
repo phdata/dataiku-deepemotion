@@ -9,14 +9,14 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 2,
-              "height": 2
+              "width": 10,
+              "height": 6
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -37,11 +37,11 @@
   "name": "App Dash",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597869137652
+    "lastModifiedOn": 1597869164752
   },
   "creationTag": {
     "versionNumber": 0,
