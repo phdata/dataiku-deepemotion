@@ -40,6 +40,11 @@
           "scenarioId": "PRODSCOREVIDEOS",
           "type": "SCENARIO_RUN",
           "prompt": "Go"
+        },
+        {
+          "dashboardId": "DLQrB2c",
+          "type": "DASHBOARD_LINK",
+          "prompt": "View results"
         }
       ]
     }
