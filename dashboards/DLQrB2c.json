@@ -37,11 +37,11 @@
   "name": "App Dash",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597869205894
+    "lastModifiedOn": 1597935821426
   },
   "creationTag": {
     "versionNumber": 0,
