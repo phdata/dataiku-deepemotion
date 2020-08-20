@@ -9,8 +9,8 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 12,
-              "height": 7
+              "width": 11,
+              "height": 2
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -26,6 +26,29 @@
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 2,
+              "left": 0,
+              "width": 11,
+              "height": 6
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "zZ8NB8U",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -37,11 +60,11 @@
   "name": "App Dash",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597935821426
+    "lastModifiedOn": 1597935879855
   },
   "creationTag": {
     "versionNumber": 0,
