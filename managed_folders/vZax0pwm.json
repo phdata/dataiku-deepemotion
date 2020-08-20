@@ -14,7 +14,7 @@
   },
   "flowOptions": {
     "virtualizable": false,
-    "rebuildBehavior": "NORMAL",
+    "rebuildBehavior": "WRITE_PROTECT",
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "metrics": {
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1593633187702
+    "lastModifiedOn": 1597936200401
   },
   "creationTag": {
     "versionNumber": 0,
