@@ -26,13 +26,38 @@
       "_refreshTrigger": 0
     },
     "def": {
-      "type": "grouped_columns",
-      "variant": "normal",
+      "type": "stacked_area",
+      "variant": "stacked_100",
       "name": "Chart",
       "userEditedName": false,
       "genericDimension0": [],
       "genericDimension1": [],
-      "facetDimension": [],
+      "facetDimension": [
+        {
+          "column": "video_path",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
       "animationDimension": [],
       "genericMeasures": [],
       "xDimension": [],
@@ -52,6 +77,7 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
@@ -93,6 +119,7 @@
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -120,11 +147,11 @@
   "listed": false,
   "name": "Chart on ProdScoredImages_prepared",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597935428806
+    "lastModifiedOn": 1597935486115
   },
   "creationTag": {
     "versionNumber": 0,
