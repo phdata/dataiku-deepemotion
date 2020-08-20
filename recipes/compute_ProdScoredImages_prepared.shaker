@@ -20,7 +20,8 @@
       "maxStoredBytes": 104857600,
       "targetRatio": 0.02,
       "maxReadUncompressedBytes": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL"
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
     },
     "autoRefreshSample": false
   },
@@ -61,7 +62,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FindReplace",
@@ -82,6 +83,20 @@
         "matching": "PATTERN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RegexpExtractor",
+      "params": {
+        "found_col": false,
+        "extractAllOccurrences": false,
+        "prefix": "frame",
+        "column": "images",
+        "pattern": ".*f([0-9]{3}).png"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -92,17 +107,19 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
-    "prediction_neutral": 176,
     "images": 218,
     "prediction_angry": 162,
+    "video_path": 218,
+    "frame1": 100,
+    "prediction_fearful": 176,
+    "error": 100,
+    "1": 100,
+    "prediction_neutral": 176,
     "prediction_calm": 162,
     "prediction_disgust": 176,
-    "video_path": 218,
-    "prediction_fearful": 176,
     "prediction": 300,
     "prediction_surprised": 190,
     "prediction_sad": 162,
-    "error": 100,
     "prediction_happy": 162
   },
   "sorting": [],
