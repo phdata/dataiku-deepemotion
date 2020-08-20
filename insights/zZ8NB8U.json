@@ -28,7 +28,7 @@
     "def": {
       "type": "stacked_area",
       "variant": "stacked_100",
-      "name": "Avg. of prediction_calm by frame1",
+      "name": "Avg. of prediction_happy by frame1",
       "userEditedName": false,
       "genericDimension0": [
         {
@@ -49,132 +49,101 @@
             {
               "type": "NATURAL",
               "label": "Natural ordering",
-              "sortAscending": true,
-              "$$hashKey": "object:39442"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of prediction_calm, descending",
-              "$$hashKey": "object:39443"
+              "label": "Average of prediction_happy, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of prediction_calm, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:39444"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of prediction_surprised, descending",
-              "$$hashKey": "object:39445"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of prediction_surprised, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:39446"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 2,
-              "label": "Average of prediction_surprised, descending",
-              "$$hashKey": "object:39447"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 2,
-              "label": "Average of prediction_surprised, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:39448"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 3,
-              "label": "Average of prediction_neutral, descending",
-              "$$hashKey": "object:39449"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 3,
-              "label": "Average of prediction_neutral, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:39450"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 4,
-              "label": "Average of prediction_angry, descending",
-              "$$hashKey": "object:39451"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 4,
-              "label": "Average of prediction_angry, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:39452"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 5,
-              "label": "Average of prediction_sad, descending",
-              "$$hashKey": "object:39453"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 5,
-              "label": "Average of prediction_sad, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:39454"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 6,
-              "label": "Average of prediction_happy, descending",
-              "$$hashKey": "object:39455"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 6,
               "label": "Average of prediction_happy, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:39456"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 7,
-              "label": "Average of prediction_fearful, descending",
-              "$$hashKey": "object:39457"
+              "measureIdx": 1,
+              "label": "Average of prediction_fearful, descending"
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 7,
+              "measureIdx": 1,
               "label": "Average of prediction_fearful, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:39458"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 8,
-              "label": "Average of prediction_disgust, descending",
-              "$$hashKey": "object:39459"
+              "measureIdx": 2,
+              "label": "Average of prediction_disgust, descending"
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 8,
+              "measureIdx": 2,
               "label": "Average of prediction_disgust, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:39460"
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of prediction_sad, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of prediction_sad, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Average of prediction_calm, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Average of prediction_calm, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Average of prediction_neutral, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Average of prediction_neutral, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Average of prediction_surprised, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Average of prediction_surprised, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 7,
+              "label": "Average of prediction_angry, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 7,
+              "label": "Average of prediction_angry, ascending",
+              "sortAscending": true
             }
           ],
           "sort": {
             "type": "NATURAL",
             "label": "Natural ordering",
-            "sortAscending": true,
-            "$$hashKey": "object:39442"
+            "sortAscending": true
           }
         }
       ],
@@ -200,100 +169,89 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of prediction_calm, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Average of prediction_calm, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of prediction_surprised, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of prediction_surprised, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 2,
-              "label": "Average of prediction_surprised, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 2,
-              "label": "Average of prediction_surprised, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 3,
-              "label": "Average of prediction_neutral, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 3,
-              "label": "Average of prediction_neutral, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 4,
-              "label": "Average of prediction_angry, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 4,
-              "label": "Average of prediction_angry, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 5,
-              "label": "Average of prediction_sad, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 5,
-              "label": "Average of prediction_sad, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 6,
               "label": "Average of prediction_happy, descending"
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 6,
+              "measureIdx": 0,
               "label": "Average of prediction_happy, ascending",
               "sortAscending": true
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 7,
+              "measureIdx": 1,
               "label": "Average of prediction_fearful, descending"
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 7,
+              "measureIdx": 1,
               "label": "Average of prediction_fearful, ascending",
               "sortAscending": true
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 8,
+              "measureIdx": 2,
               "label": "Average of prediction_disgust, descending"
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 8,
+              "measureIdx": 2,
               "label": "Average of prediction_disgust, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of prediction_sad, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of prediction_sad, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Average of prediction_calm, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Average of prediction_calm, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Average of prediction_neutral, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Average of prediction_neutral, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Average of prediction_surprised, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Average of prediction_surprised, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 7,
+              "label": "Average of prediction_angry, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 7,
+              "label": "Average of prediction_angry, ascending",
               "sortAscending": true
             }
           ],
@@ -306,72 +264,6 @@
       ],
       "animationDimension": [],
       "genericMeasures": [
-        {
-          "column": "prediction_calm",
-          "function": "AVG",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        },
-        {
-          "column": "prediction_surprised",
-          "function": "AVG",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        },
-        {
-          "column": "prediction_surprised",
-          "function": "AVG",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        },
-        {
-          "column": "prediction_neutral",
-          "function": "AVG",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        },
-        {
-          "column": "prediction_angry",
-          "function": "AVG",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        },
-        {
-          "column": "prediction_sad",
-          "function": "AVG",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        },
         {
           "column": "prediction_happy",
           "function": "AVG",
@@ -396,6 +288,61 @@
         },
         {
           "column": "prediction_disgust",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_sad",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_calm",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_neutral",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_surprised",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "prediction_angry",
           "function": "AVG",
           "type": "NUMERICAL",
           "displayed": true,
@@ -491,14 +438,14 @@
   },
   "owner": "admin",
   "listed": false,
-  "name": "Avg. of prediction_calm by frame1 on ProdScoredImages_prepared",
+  "name": "Avg. of prediction_happy by frame1 on ProdScoredImages_prepared",
   "dashboardCreationId": "DLQrB2c",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597935857696
+    "lastModifiedOn": 1597936543838
   },
   "creationTag": {
     "versionNumber": 0,
