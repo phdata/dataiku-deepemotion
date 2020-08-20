@@ -278,7 +278,7 @@
       "colorOptions": {
         "singleColor": "#2678B1",
         "transparency": 0.75,
-        "colorPalette": "default",
+        "colorPalette": "__dku_custom__",
         "ccScaleMode": "NORMAL",
         "customPalette": {
           "id": "__dku_custom__",
@@ -325,11 +325,11 @@
   "name": "Avg. of prediction_happy_avg by video_path on ProdScoredVideos",
   "dashboardCreationId": "DLQrB2c",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597869199066
+    "lastModifiedOn": 1597936480867
   },
   "creationTag": {
     "versionNumber": 0,
