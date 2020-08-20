@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1596811613005
+    "lastModifiedOn": 1597935647290
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,6 +91,10 @@
         "type": "string"
       },
       {
+        "name": "frame1",
+        "type": "string"
+      },
+      {
         "name": "video_path",
         "type": "string"
       },
@@ -103,6 +107,10 @@
         "type": "double"
       },
       {
+        "name": "prediction_sad",
+        "type": "double"
+      },
+      {
         "name": "prediction_surprised",
         "type": "double"
       },
@@ -111,11 +119,7 @@
         "type": "double"
       },
       {
-        "name": "prediction_sad",
-        "type": "double"
-      },
-      {
-        "name": "prediction_disgust",
+        "name": "prediction_happy",
         "type": "double"
       },
       {
@@ -123,7 +127,7 @@
         "type": "double"
       },
       {
-        "name": "prediction_happy",
+        "name": "prediction_disgust",
         "type": "double"
       }
     ],
