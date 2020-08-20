@@ -19,6 +19,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "ProdScoredImages_prepared",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -208,11 +217,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597869230506
+    "lastModifiedOn": 1597935428723
   },
   "creationTag": {
     "versionNumber": 0,
