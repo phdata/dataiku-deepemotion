@@ -10,11 +10,11 @@
               "top": 0,
               "left": 0,
               "width": 11,
-              "height": 2
+              "height": 3
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "showXAxis": true,
+              "showXAxis": false,
               "showYAxis": true,
               "showLegend": true,
               "showTooltips": true,
@@ -30,7 +30,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 2,
+              "top": 3,
               "left": 0,
               "width": 11,
               "height": 6
@@ -38,8 +38,8 @@
             "clickAction": "DO_NOTHING",
             "tileParams": {
               "showXAxis": true,
-              "showYAxis": true,
-              "showLegend": false,
+              "showYAxis": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -60,11 +60,11 @@
   "name": "App Dash",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597936631970
+    "lastModifiedOn": 1597936742231
   },
   "creationTag": {
     "versionNumber": 0,
