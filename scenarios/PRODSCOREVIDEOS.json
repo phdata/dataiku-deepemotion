@@ -5,11 +5,11 @@
   "name": "Score incoming videos",
   "active": false,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597870341626
+    "lastModifiedOn": 1597936253109
   },
   "checklists": {
     "checklists": []
@@ -190,7 +190,7 @@
         "id": "clear__f_MzP4vBYB",
         "type": "clear_items",
         "name": "Clear video and image files",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
