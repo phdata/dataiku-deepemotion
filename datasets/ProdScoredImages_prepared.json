@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1597935647290
+    "lastModifiedOn": 1597935692200
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,7 +92,8 @@
       },
       {
         "name": "frame1",
-        "type": "string"
+        "type": "int",
+        "meaning": "LongMeaning"
       },
       {
         "name": "video_path",
