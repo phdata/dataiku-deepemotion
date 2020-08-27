@@ -35,7 +35,7 @@ class MyPredictor(ClassificationPredictor):
         decision_series, proba_df and custom_keys_list must have the same number of rows than df.
         """
         
-        dataiku.set_remote_dss('http://52.71.116.91:80', 'cooIYgi7VNXqTr5XIeEbLQRIis7jTEvm')
+        dataiku.set_remote_dss('http://52.71.116.91:80', 'hTeQ6RbM8u4ASGMthBChKxDfniusNoZu')
 
         df = features_df
         data_folder = dataiku.Folder('MzP4vBYB', project_key='PHDATAEMOTION')

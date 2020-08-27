@@ -9,6 +9,8 @@
       "testQueries": [],
       "enrichMapping": [],
       "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
       "id": "prod_score_video",
       "type": "CUSTOM_PREDICTION"
     }
